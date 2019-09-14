@@ -19,7 +19,7 @@
     "test-ci": "set CI=true && cross-env REACT_APP_ENVIRONMENT=development react-scripts test --env=jsdom --reporters=default --testResultsProcessor=./src/jestTrxProcessor",
     "js-lint": "./node_modules/.bin/eslint --ext .js --ext .jsx src/",
     "sass-lint": "./node_modules/.bin/sass-lint 'src/**/*.scss' -v -q",
-    "precommit": "npm-run-all build-dev js-lint"
+    "precommit": "npm-run-all js-lint"
   },
   "dependencies": {
     "bootstrap": "^4.3.1",
