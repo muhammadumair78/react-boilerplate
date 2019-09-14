@@ -1,11 +1,11 @@
 import React from 'react';
-import AuthShell from '../AuthShell';
+import AppShell from '../../shell/AppShell';
 import { Link } from 'react-router-dom';
 import { routesUrl } from '../../../constants';
 
 export default function () {
     return (
-      <AuthShell>
+      <AppShell>
         <div className="p-5">
           <div className="text-center">
             <h1 className="h4 text-gray-900 mb-2">Forgot Your Password?</h1>
@@ -31,6 +31,6 @@ export default function () {
             </Link>
            </div>
         </div>
-      </AuthShell>
+      </AppShell>
     );
 }

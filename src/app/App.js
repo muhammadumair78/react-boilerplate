@@ -1,9 +1,9 @@
 import React from 'react';
-import Login from './components/auth/Login';
+import Routes from './Routes';
 
 function App() {
   return (
-    <Login />
+    <Routes />
   );
 }
 
