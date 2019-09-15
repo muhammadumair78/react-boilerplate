@@ -1,5 +1,6 @@
 import React from 'react';
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { Router, Switch, Route } from 'react-router-dom';
+import { history } from './history';
 
 // import PrivateRoute from './components/PrivateRoute';
 // import PublicRoute from './components/PublicRoute';
@@ -11,12 +12,12 @@ import UserDashboard from './components/dashboard/UserDashboard';
 
 export default function () {
     return (
-        <BrowserRouter>
+        <Router history={history}>
             <Switch key="appRoutes">
                 <Route path={routesUrl.LOGIN} component={Login} />
                 <Route path={routesUrl.FORGOT_PASSWORD} component={ForgotPassword} />
                 <Route path={routesUrl.USER_DASHBOARD} component={UserDashboard} />
             </Switch>
-        </BrowserRouter>
+        </Router>
     )
 };
